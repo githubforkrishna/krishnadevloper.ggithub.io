@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,200;1,300;1,400;1,700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+button,body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+.fullcontainer{
+    width:100%;
+
+}
+
+.container{
+    width:1140px;
+    margin:auto;
+}
+
+.sectionTitle
+{
+    width:300px;
+    border-bottom: 3px solid red;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+
+}
+.sectionTitle::after
+{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: coral;
+    position: absolute;
+    left: calc(45%);
+    top: calc(2%);
+    transform: rotate(45deg) translate(200%, 200%);
+    border: 3px solid white;
+}
+  section
+  {
+      padding: 100px;
+      position: relative;
+
+  }
+
+ header{
+    width:100%;
+    background-color: rgb(0.5, 0.9,0.6);
+    position:fixed;
+    z-index: 2;
+}
+header .container{
+    display:flex;
+    justify-content: space-around;
+
+
+}
+
+header .container .logo{
+    padding: 15px 0;
+    height:75px;
+}
+
+header .container .logo img{
+    height:100%;
+}
+
+header nav ul{
+   list-style-type: none;
+}
+header nav ul li{
+    display:inline;
+}
+
+header nav ul li a {
+    
+    color:red;
+    display:inline-block;
+    height 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: red;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover{
+    background-color: rgba(221, 21, 154, 0.836);
+}
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1{
+    
+    
+    margin-top: 210px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 0 0 2px black;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+
+}
+
+.banner h1 span {
+    background-color: tomato;
+    display: inline-block;
+    line-height: 4.2rem;
+    padding:0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.banner p{
+    color:white;
+    widows: 50%;
+    text-shadow: 0 0 2px black;
+    margin: 1px;
+}
+    
+.banner button{
+    background-color: rgb(228, 15, 15);
+    border: 0;
+    outline: none;
+    color: cyan;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+/* home design end*/
+/* about us section start*/
+#aboutSection  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+    background-color: hotpink;
+}
+#aboutSection .card > div{
+    width: 350px;
+    background-color: gray;
+    padding: 35px;
+    color: #444444;
+    text-align: center;
+    border-radius: 5px;
+    height: 215px;
+    border: 1px solid #ccc;
+}
+
+#aboutSection .card > div:hover{
+    width: 400px;
+    margin-top: -20px;
+    border-color: red;
+    padding: 55px;
+    height: auto;
+}
+#aboutSection .card > div .title{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+#aboutSection .card > div p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+#aboutSection .card > div button{
+    border: 1px solid green;
+    outline: none;
+    padding 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.4sec;
+}
+#aboutSection .card > div:hover button{
+    background-color: hotpink;
+}
+/* about us section end*/

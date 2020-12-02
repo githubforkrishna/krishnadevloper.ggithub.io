@@ -1,0 +1,86 @@
+*{
+    margin: 0;padding: 0;
+    background-origin: padding-box;
+    background-color: lightskyblue;
+
+}
+
+main{
+    width: 90%; margin:50px auto;
+    border:1px solid grey;
+    display:grid;
+    grid-template-rows: 60px 100px 200px 60px;
+    grid-template-columns: repeat(3,1fr)  250px;
+    grid-gap:15px;
+    
+}
+.header{
+    background-color: tomato;
+    grid-column: 1/-1;
+}
+.header ul {
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.header ul  li
+                {
+                 float: left;
+                 width: 20%;
+                 height: 40px;
+                 text-align: center;
+                 font-size: 24px;
+                 font-style: oblique;
+                 text-transform: capitalize;
+                
+              }
+
+
+.box1{ 
+  background-color: turquoise;
+  height: 
+  width: 500px;
+}
+
+.box2{
+    background-color: turquoise;
+  
+}
+.box3{
+    background-color: turquoise;
+}
+.sidebar
+        {
+           background-color: seagreen;
+           grid-row: 2/4; grid-column: 4/5;
+           background-image: url(../images/b.gif);
+           background-repeat: no-repeat;
+        }
+.maincontent
+             {
+               background-color: mediumvioletred;
+               grid-column: 1/4;
+               text-transform:capitalize;
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               color: darkgreen;
+               ;
+
+             }
+.footer
+      {
+        background-color: olive;
+        grid-column: 1/-1;
+      }
+
+
+
+      background-image: linear-gradient(to top, #fff 80%,#c3f5ff 20%);
+      .logo{
+        width: 40%;
+        color: #fff;
+        background-image: linear-gradient(#8d98e3, #854fee);
+        padding: 100px;
+        box-sizing: border-box;
+    }

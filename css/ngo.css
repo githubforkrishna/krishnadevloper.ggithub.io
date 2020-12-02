@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,200;1,300;1,400;1,700&display=swap');
+
+button,body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+.fullcontainer{
+    width:100%;
+
+}
+
+.container{
+    width:1140px;
+    margin:auto;
+}
+.container button:hover{
+background-color:black;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.sectionTitle
+{
+    width:300px;
+    border-bottom: 3px solid red;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+
+}
+.sectionTitle::after
+{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: coral;
+    position: absolute;
+    left: calc(45%);
+    top: calc(-2%);
+    transform: rotate(45deg) translate(200%, 200%);
+    border: 3px solid white;
+}
+  section
+  {
+      padding: 100px;
+      position: relative;
+
+  }
+
+ header{
+    width:100%;
+    background-color: rgb(0.5, 0.9,0.6);
+    position:fixed;
+    z-index: 2;
+}
+header .container{
+    display:flex;
+    justify-content: space-around;
+
+
+}
+
+header .container .logo{
+    padding: 15px 0;
+    height:75px;
+}
+
+header .container .logo img{
+    height:100%;
+
+}
+
+header nav ul{
+   list-style-type: none;
+}
+header nav ul li{
+    display:inline;
+}
+
+header nav ul li a {
+    
+    color:red;
+    display:inline-block;
+    height 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: red;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover{
+    background-color: rgba(6, 37, 236, 0.836);
+    border-radius: 8px;
+   
+}
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1{
+    
+    
+    margin-top: 210px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 0 0 2px black;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+
+}
+
+.banner h1 span {
+    background-color: darkblue;
+    display: inline-block;
+    line-height: 4.2rem;
+    padding:0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.banner p{
+    color:white;
+    widows: 50%;
+    text-shadow: 0 0 2px black;
+    margin: 1px;
+}
+    
+.banner button{
+    background-color: rgb(12, 11, 11);
+    border: 0;
+    outline: none;
+    color: cyan;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+/* home design end*/
+/* about us section start*/
+.cards{
+    width: 100%;
+    height: 280px;
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-top: 20px;
+    padding: 28px;
+}
+.cards > div{
+    width: 350px;
+    background-color: gray;
+    padding: 35px;
+    color: #444;
+    text-align: center;
+    border-radius: 15px;
+    height: 215px;
+    border: 1px solid #cccccc;
+    transition: 00.4sec;
+}
+.cards > div:hover {
+    width: 400px;
+    margin-top: -20px;
+    border-color: chocolate;
+    padding: 55px;
+    height: auto;
+
+
+}
+.cards .title{
+    text-align: center;
+
+    
+}
+.cards > div button{
+     width: 145px;
+     height: 35px;
+    font-size: 20px; 
+    outline: none;
+    padding 7px 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4sec;
+}
+.cards button:hover{
+    background-color: olive;
+}
+.cards button:active{
+    background-color:green;  
+}
+
+.cards > div .title{
+    font-size:21px;
+    font-weight: 600;
+    text-transform: uppercase; 
+    color:blue;
+}
+.cards > div p{
+    font-size: 14px;
+    margin-top: 15px;
+    color:indigo;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+
+/* about us section end its above*/
+
+/* programs section start here below*/
+
+.programs{
+    background-color: khaki;
+    width: 100%;
+}
+.programs .boxContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+}
+
+.programs .boxContainer .box{
+    background-color: lawngreen;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 bisque;
+    position: relative;
+    margin-bottom: 15px;
+}
+.programs .boxContainer .box .cardImage{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+.programs .boxContainer .box .cardImage::after{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4sec;
+}
+ .programs .boxContainer .box:nth-child(1) .cardImage,
+ .programs .boxContainer .box:nth-child(1) .cardImage::after{
+background-image: url("../images/program/1.jpg");
+ }
+
+ .programs .boxContainer .box:nth-child(2) .cardImage,
+ .programs .boxContainer .box:nth-child(2) .cardImage::after{
+background-image: url("../images/program/2.jpg");
+ }
+
+ .programs .boxContainer .box:nth-child(3) .cardImage,
+ .programs .boxContainer .box:nth-child(3) .cardImage::after{
+background-image: url("../images/program/3.jpg");
+ }
+
+ .programs .boxContainer .box:nth-child(4) .cardImage,
+ .programs .boxContainer .box:nth-child(4) .cardImage::after{
+background-image: url("../images/program/4.jpg");
+ }
+
+ .programs .boxContainer .box:hover .cardImage::after{
+     top: 100%;
+
+ }
+ .programs .boxContainer .box .programsTitle{
+     font-size: 16px;
+     margin-top: 15px;
+     font-weight: 600;
+     color: midnightblue;
+ }
+
+ .programs .boxContainer .box .donationCount{
+     font-size: 13px;
+     font-weight: 600;
+     color: navy;
+     margin-top: 10px;
+     
+ }
+ .programs .boxContainer .box .donationCount span{
+     color: red;
+ }
+ .programs .boxContainer .box button{
+    position: absolute;
+    background-color: white;
+    border-radius: 7px;
+    left: 30%;
+    color: black;
+    transform: translate(-50%);
+    bottom: -15px;
+    padding: 7px;
+    border: 0;
+    outline: none;
+cursor: pointer;
+    
+}
+/* programs section end  above here*/
+
+
+/* educationSection start here*/
+.education{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.education .videoplayer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+}
+.education .sectionTitle{
+    color: wheat;
+    text-shadow: 0 0 4px green;
+}
+.education .educationContainer{
+    position: absolute;
+    background-color:black;
+    width: 800px;
+    top: 35vh;
+    color: white;
+    text-shadow: 0 0 3p white;
+    padding: 30px;
+    border-radius: 25px;
+}
+.education .educationContainer h3{
+ font-size: 35px;
+ font-weight: 300;
+}
+
+.education .educationContainer p{
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px 0 30px;
+}
+.education .educationContainer button{
+    background-color: dimgrey;
+    border: 1px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: lightseagreen;
+    cursor: pointer;
+}
+
+.education .educationContainer button:hover{
+    background-color: lime;
+    border-radius: 16px;
+}
+/*educationSection end  here*/
+
+/*GallerySection start below here*/
+.gallery{
+    width: 1600px;
+   /* min-height: 500px;*/
+    /*background: #ffffff;*/
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+.gallery .box{
+         position: relative;
+         width: 300px;
+         height: 300px;
+         background:transparent;
+         margin: 1px;
+         box-sizing: border-box;
+         display: inline-block;
+        }  
+        
+.gallery .box .imgBox{
+                 position: relative;
+                 overflow: hidden;
+
+                }
+.gallery .box .imgBox img{
+                     max-width: 100%;
+                     
+                     transition: transform 2s;
+                    }
+
+.gallery .box:hover .imgBox img{
+                           transform: scale(1.2);
+                        transition: transform 2s;
+                        cursor: pointer;
+                        
+                       }                           
+.gallery .box .details{
+                position: absolute;
+                top: 225px;
+                left: 10px;
+                bottom: 10px;
+                right: 10px;
+                background-color:transparent;
+                transform: scaleY(0);
+                transition: transform .5s;
+                width: 240px;
+                height: 86px;
+                border-radius: 25px;
+              }   
+              
+.gallery .box:hover .details{
+                              transform: scaleY(1);
+                        
+                            }
+ 
+.gallery .box .details .content{
+                           position: absolute;
+                           top: 50%;
+                           transform: translateY(-50%);
+                           text-align: center;
+                           padding: 10px;
+                           }                     
+.gallery .box .details .content h2{
+                           margin: 0;
+                           padding: 0;
+                           font-size: 25px;
+                           color:firebrick;
+                          }
+
+.gallery .box .details .content p{
+                            margin: 10 0 0;
+                            padding: 0;
+                            font-size: 20px;
+                        
+                           }                        
+/*GallerySection end above  here*/
+
+                                                    /*JoinUsSection start  below here*/
+
+                                                     .join{
+                                                            background-image: url("../images/pattern.jpg");
+                                                            
+                                                            
+                                                           }
+                                                     .join .joinTitle span{
+                                                                            font-weight: 900;
+                                                                          }
+                                                                    
+                                                       .join p{
+                                                           cursor: pointer;
+                                                           font-size: 28px;
+                                                           color:aqua;
+                                                           font-style: italic;
+                                                       }  
+                                                       .join p:hover{
+                                                           width: 100%;
+                                                           background-color:rgb(10, 1, 15);
+                                                           border-radius: 15px;
+                                                          
+                                                       }                 
+                                                    .join button{
+                                                                    padding: 7px 15px;
+                                                                    margin-top: 20px;
+                                                                    border: 1;
+                                                                    outline: none;
+                                                                    font-weight: 800;
+                                                                    font-size: 16px;
+                                                                    cursor: pointer;
+                                                                    
+                                                                 }
+                                                      .join button:hover{
+                                                          width: auto;
+                                                          background-color:maroon;
+                                                          border-radius: 15px;
+                                                      }           
+                                                    .join .joinTitle{
+                                                                            margin-right: 10px;
+                                                                            background-color:transparent;
+                                                                            color:lime;
+                                                                            font-size: 29px;
+
+                                                     }   
+                                                     .join  .joinUs{
+                                                         margin-right: 10px;
+                                                        background-color: black;
+                                                        color:white;
+                                                     }   
+                                                     
+                                                    .join  .adopBtn{
+                                                        margin-right: 10px;
+                                                        background-color: black;
+                                                        color:rgb(28, 169, 89);
+                                                    }
+                                                    /*JoinUsSection end above  here*/
+
+                                                    /*footer start below  here*/
+                                                    footer{
+                                                        background-color: black;
+                                                        color: white;
+                                                        padding: 50px;
+                                                        font-size: 15px;
+                                                    }
+                                                    footer .container{
+                                                        display: grid;
+                                                        grid-template-columns:85fr;
+                                                        grid-gap: 50px;
+                                                    }
+                                                    footer .title{
+                                                        font-size: 20px;
+                                                        font-weight: 700;
+                                                        text-transform: uppercase;
+                                                        border-bottom: 2px solid;
+                                                        margin-bottom: 30px;
+                                                        padding: 0 0 5px 0;
+                                                    }
+                                                    footer p{
+                                                              margin-bottom: 10px;
+                                                    }
+
+                                                    footer .linkContainer .title{
+                                                        text-align: center;
+                                                    }
+                                                    footer .connectContainer .title{
+                                                        text-align: center;
+                                                    }
+                                                    
+
+                                                    footer .linkContainer ul{
+                                                        text-align: center;
+                                                     list-style-type:none;
+                                                     display: grid;
+                                                     grid-template-columns:1fr 1fr 1fr 1fr;
+                                                     text-transform: capitalize;
+                                                    }
+                                                    footer .linkContainer ul li a:hover{
+                                                        background-color:maroon;
+                                                        border-radius:2px;
+                                                   transform: rotateY(45deg);
+                                                        
+                                                    }
+
+                                                    footer .linkContainer ul li a{
+                                                        text-decoration: none;
+                                                        color: lightskyblue;
+                                                        margin-bottom: 10px;
+                                                        display: inline-block;
+                                                        font-size: 18px;
+                                                    }
+                                                    footer .newsLetterContainer img {
+                                                        height: 80px;
+                                                        margin: 11px;
+                                                    }
+                                                    footer .newsLetterContainer input{
+                                                        background-color:  transparent;
+                                                        border: 1px solid green;
+                                                        outline: none;
+                                                        padding: 10px 15px;
+                                                        width: 25%;
+                                                        margin-top: 10px;
+                                                        color: white;
+                                                        border-radius: 15px;
+                                                    }
+
+                                                    /*Foother  end above  here*/
+                                     
+                              /*responsive coding start */ 
+
+                              @media screen and (max-width:1140px){
+                                  .container{
+                                      width: 100%;
+                                      padding: 0 15px;
+                                  }
+                              }
+                              @media screen and (max-width: 1080px){
+                                  .banner h1{
+                                      margin-top: 200px;
+                                  }
+                                  #aboutSEction .cards{
+                                      justify-content: space-around;
+                                      height: auto;
+                                  }
+                                  #aboutSection .cards > div {
+                                      margin: 10px 0;
+                                  }
+                              }
+                              @media screen and (max-width:1024px)
+                              {
+                                  .banner{
+                                      background-position-x: 45%;
+                                  }
+                                  .banner h1{
+                                      font-size: 2.5rem;
+                                  }
+                                  .programs .boxContainer{
+                                      grid-template-columns: repeat(2,1fr);
+                                  }
+                              }
+                              @media screen and (max-width:768px){
+                                  header nav {
+                                      position: relative;
+                                      border: 2px solid green;
+                                      height: 30px;
+                                      width: 30px;
+                                      margin-top: 20px;
+                                      border-radius: 5px;
+                                  }
+                                  header nav::after{
+                                                    top: 17px;
+                                  }
+                                  header nav::before{
+                                                        top: 7px;
+                                  }
+
+                                  header nav::after,header nav::before{
+                                      content: "";
+                                      height: 2px;
+                                      width: 17px;
+                                      background-color: indigo;
+                                      display: block;
+                                      position:absolute;
+                                      left: 5px;
+                                  }
+                                  header nav ul {
+                                      position: absolute;
+                                      right: -400px;
+                                      top: 53px;
+                                      transition: 0.5s;
+                                  }
+                                  header nav:hover ul {
+                                      right: 0;
+                                  }
+                                  header nav ul li{
+                                      display: block;
+                                  }
+                                  header nav ul li a{
+                                      width: 300px;
+                                      background-color: black;
+                                  }
+                                  .banner{
+                                      background-position-x: 65%;
+                                  }
+                                  .banner p{
+                                      font-size: 14px;
+
+                                  }
+
+                                  .banner p,.banner h1{
+                                      width: 70%;
+
+                                  }
+                                    #aboutSection .cards > div:hover {
+                                        width: 350px;
+                                         
+                                    }
+                                    .education .educationContainer{
+                                        width: 96%;
+
+                                    }
+                                    .education .educationContainer h3{
+                                        font-size: 30px;
+                                        line-height: 35px;
+                                    }
+                                    .education .educationContainer p{
+                                        padding: 0;
+                                        margin: 10 0 20px;
+                                    } 
+
+                                    .gallery  .box{
+                                        column-count: 2;
+                                    }
+                              }
+
+                                @media screen and (max-width:425px){
+                                    .banner h1{
+                                        margin-top: 150px;
+                                        font-size: 2rem;
+                                        line-height: 3rem;
+
+                                    }
+                                    .banner button{
+                                        margin-bottom: 10px;
+                                    }
+                                    #aboutSection P{
+                                        text-align: justify;
+                                    }
+                                    #aboutSection .cards > div:hover{
+                                        width: 400px;
+                                        margin-top: 10px;
+                                        padding: 35px;
+                                    }
+                                    .programs .boxContainer{
+                                        grid-template-columns: 1fr;
+                                    }
+                                    .education .videoplayer{
+                                        width: 1400;
+                                    }
+                                    .education .educationContainer {
+                                        width: 93%;
+
+                                    }
+                                    .gallery .box{
+                                        column-count: 1;
+                                    }
+                                    footer .container{
+                                        grid-template-columns: 1fr;
+                                    }
+                                }
+                                @media screen and (max-width:320px)
+                                {
+                                   .education .educationContainer{
+                                       font-size: 10px;
+                                       line-height:24px;
+
+                                   }
+                                   .banner h1{
+                                              margin-top: 100px;
+                                   }
+
+                                }
+
+                                /*responsive coding end */
+                                

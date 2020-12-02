@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Crimson Text', serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left, #fff 77.59%,#c3f5ff 20%);
+}
+.navsection{
+    width: 100%;
+    height: 20vh;
+    display: flex; 
+    justify-content:space-around;
+    align-items: center;
+   background-color: yellow;
+   background-image: linear-gradient(to top, #fff 80%,#c3f5ff 20%);
+  
+}
+
+.logo{
+    width: 40%;
+    color: #fff;
+    background-image: linear-gradient(#8d98e3 40%,#854fee 60%);
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.logo h1{
+ text-transform:uppercase ;
+ font-size: 1.2rem;
+ animation:aagepichhe 1s linear  infinite;
+ animation-direction: alternate;
+
+
+}
+@keyframes aagepichhe{
+    from{padding-left: 40px;}
+    to{ padding-right: 40px;}
+}
+nav{
+    width: 60%;
+    display:flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration:none;
+    text-transform: uppercase;
+    color:  #000;
+    font-weight: 900;
+    font-size: 17px;
+    position: relative;
+}
+
+nav a:first-child
+{
+    color:green;
+}
+
+nav a::before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    border-bottom: 2px solid #8d98e3;
+    transition:all 0.4s linear;
+
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+main{
+    height:80vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightside img{
+max-width: 500px;
+height: auto;
+border-radius: 100%;
+
+}
+
+.rightside {
+    background-color: seagreen;
+    border-radius:49% 59% 55% 49% / 45% 50% 58% 55% ;
+}
+.leftside{
+     color:#000;
+     text-transform: uppercase;
+
+}
+
+.leftside h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+.leftside h3::after{
+    content: "";
+    width: 325px;
+    height: 5px;
+    position: absolute;
+    top: 35%;
+    left: 34%;
+    background-color: black;
+
+
+}
+
+}
+
+.leftside h1{
+    margin-top: 20px;
+    font-size: 17px;
+    margin-bottom:25px ;
+}
+.leftside h2{
+    margin-bottom: 35px;
+    font-weight: 500;
+    word-spacing: 4px;
+}
+ 
+
+.leftside .buttun1{
+
+    background-color: royalblue;
+    color: yellow;
+
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 14px;
+        text-align: center;
+        padding: 12px 25px;
+        cursor: pointer;
+        text-transform: uppercase;
+        border-radius: 2%;
+        display:inline-block;
+        margin-right: 50px;
+        color: white;
+        background-image: linear-gradient(to right,blue 0%,#654dee 100%);
+        border:  2px dotted black;
+        
+        box-shadow: 0 10px 30px rgba(rgb(182, 11, 11), rgb(6, 211, 6), rgb(179, 255, 0), alpha);
+       
+       
+       
+}
+
+  /* we can write same things for  for same atributes likw .abc .bba,bca{ write css here for both}*/
+
+ .leftside .buttun2{
+     text-decoration: none;
+     font-weight: 900;
+     font-size: 14px;
+     text-align: start;
+     padding: 12px 25px;
+     text-transform: uppercase;
+     border-radius: 2%;
+     display: inline-block;
+     margin-right: 50px;
+     border: 2px dotted black;
+     color:white;
+     background-color:grey;
+ }
+ .leftside .buttun1:hover{
+     border: 2px solid lightsalmon;
+     color:black;
+     box-shadow: none;
+     background-image: none;
+
+ }
+
+ .leftside .buttun2:hover{
+    border: 2px solid lightsalmon;
+    color:crimson;
+    box-shadow: none;
+    background-image: none;
+
+}
